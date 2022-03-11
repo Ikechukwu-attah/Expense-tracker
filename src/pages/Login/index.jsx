@@ -131,9 +131,15 @@ const Login = () => {
                 >
                   Don’t have an account?
                 </StyledText>
-                <StyledText color="#4DE897" cursor="pointer" fontSize="1.6rem">
-                  Register Here?
-                </StyledText>
+                <Link to="/sign-up" style={{ textDecoration: "none" }}>
+                  <StyledText
+                    color="#4DE897"
+                    cursor="pointer"
+                    fontSize="1.6rem"
+                  >
+                    Register Here?
+                  </StyledText>
+                </Link>
               </StyledTextWrapper>
             </StyledInputBody>
             <StyledTextWrapper justifyContent="center" gap="1rem">

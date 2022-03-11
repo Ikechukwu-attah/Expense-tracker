@@ -165,13 +165,15 @@ const Sinup = () => {
                   >
                     Already have an account?
                   </StyledText>
-                  <StyledText
-                    color="#4DE897"
-                    cursor="pointer"
-                    fontSize="1.6rem"
-                  >
-                    Login Here
-                  </StyledText>
+                  <Link to="/login" style={{ textDecoration: "none" }}>
+                    <StyledText
+                      color="#4DE897"
+                      cursor="pointer"
+                      fontSize="1.6rem"
+                    >
+                      Login Here
+                    </StyledText>
+                  </Link>
                 </StyledTextWrapper>
               )}
             </StyledInputBody>
