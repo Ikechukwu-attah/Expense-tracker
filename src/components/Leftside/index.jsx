@@ -17,15 +17,12 @@ const Leftside = ({
   lineHeight,
   subTitle,
   marginBottom,
+  Text,
 }) => {
   return (
     <StyledContainer>
       <StyledImage src={Image} />
-      <StyledTextWrapper width="50rem">
-        <StyledTitle color={color}>{title}</StyledTitle>
-        <StyledTitle color={color}>{subTitle}</StyledTitle>
-      </StyledTextWrapper>
-
+      {Text}
       <StyledDescription
         color={color}
         fontSize={fontSize}

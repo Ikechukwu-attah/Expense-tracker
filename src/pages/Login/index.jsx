@@ -22,6 +22,7 @@ import {
   StyledInputLabelContainer,
 } from "../../components/common/Input/style";
 import { ClassNames } from "@emotion/react";
+import { StyledTitle } from "../../components/Leftside/style";
 
 const Login = () => {
   const check = "We miss you.";
@@ -60,12 +61,24 @@ const Login = () => {
         <StyledWrapper>
           <Leftside
             Image="assets/Group 1.svg"
-            title={`Welcome back!  ${check}`}
+            title="Welcome back!"
             color="#000000"
             fontSize="2.1rem"
             lineHeight="2.65rem"
             // subTitle="We miss you."
             marginBottom="-10.5rem"
+            Text={
+              <StyledTextWrapper
+                flexDirection="column"
+                gap="0px"
+                margin="0px 0px 0px 0px"
+              >
+                <StyledTitle color="#000">Welcome back!</StyledTitle>
+                <StyledTitle color="green" margin="0px 0px 0px 0px">
+                  We miss you.
+                </StyledTitle>
+              </StyledTextWrapper>
+            }
           />
           <StyledBigCard
             width="592px"
@@ -118,6 +131,7 @@ const Login = () => {
                   fontSize="1.6rem"
                   letterSpacing="0.06rem"
                   lineHeight="2rem"
+                  fontWeight="900"
                 >
                   LogIn
                 </StyledButton>

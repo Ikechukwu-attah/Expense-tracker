@@ -46,7 +46,7 @@ const Dashboard = () => {
     getUserData();
   }, []);
   return (
-    <StyledLayout>
+    <StyledLayout height="max-content">
       <StyledContainer>
         <Navbar logo="/assets/logo.svg" />
         <StyledWrapper>
@@ -191,7 +191,7 @@ const Dashboard = () => {
                       border="2.5px solid #fff"
                       fontSize="1.6rem"
                       fontWeight="700"
-                      marginBottom="3rem"
+                      marginBottom="4rem"
                     >
                       SAVE TODAY’S EXPENSES
                     </StyledButton>

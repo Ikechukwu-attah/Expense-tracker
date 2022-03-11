@@ -21,6 +21,7 @@ import {
   StyledInputLabelContainer,
 } from "../../components/common/Input/style";
 import { Link } from "react-router-dom";
+import { StyledTitle } from "../../components/Leftside/style";
 
 const Sinup = () => {
   const [signupData, setSignupData] = useState({});
@@ -63,6 +64,21 @@ const Sinup = () => {
             fontSize="2.1rem"
             lineHeight="2.65rem"
             marginBottom="1.5rem"
+            Text={
+              <StyledTextWrapper
+                flexDirection="column"
+                alignItem="flex-start !important"
+                margin="0px 0px 0px 0px"
+              >
+                <StyledTextWrapper gap="2ch">
+                  <StyledTitle color="green">Welcome </StyledTitle>
+                  <StyledTitle color="black">Let's get</StyledTitle>
+                </StyledTextWrapper>
+                <StyledTitle color="#000" margin="0px 0px 50px 0px">
+                  to know you.
+                </StyledTitle>
+              </StyledTextWrapper>
+            }
           />
           <StyledBigCard
             width="592px"
@@ -150,6 +166,7 @@ const Sinup = () => {
                     fontSize="1.6rem"
                     letterSpacing="0.06rem"
                     lineHeight="2rem"
+                    fontWeight="900"
                   >
                     Sign Up
                   </StyledButton>

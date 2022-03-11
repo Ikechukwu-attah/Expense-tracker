@@ -3,13 +3,17 @@ import { Outlet, Navigate } from "react-router-dom";
 import Sinup from "../pages/Signup";
 
 const useAuth = () => {
-  const user = { loggedIn: false };
-  return user && user.loggedIn;
+  const user = localStorage.getItem("userToken");
+  if (user) {
+    return false;
+  } else {
+    return true;
+  }
 };
 const ProtectedRoutes = () => {
   const isAuth = useAuth();
 
-  return isAuth ? <Outlet /> : <Navigate replace to="/sign-up" />;
+  return !isAuth ? <Navigate replace to="/login" /> : <Outlet />;
 };
 
 export default ProtectedRoutes;

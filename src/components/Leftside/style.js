@@ -10,9 +10,10 @@ export const StyledContainer = styled.div `
 export const StyledImage = styled.img ``
 export const StyledTitle = styled.h1 `
   font-size: 4rem;
-  line-height: 5.1rem;  
+  /* line-height: 5.1rem;   */
   color: ${({color})=>color};
   width: ${({width})=>width};
+  margin: ${({margin})=>margin};
 `
 export const StyledDescription = styled.span `
   font-size: ${({fontSize})=>fontSize};
