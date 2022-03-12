@@ -92,14 +92,15 @@ const Login = () => {
               <StyledHeader fontSize="3.4rem" lineHeight="4.3rem" display>
                 Holla
               </StyledHeader>
-              <StyledText fontSize="2.5rem">Sign in to the vibe!</StyledText>
+              <StyledText fontSize="2.5rem" padding="0 0 3rem 0">
+                Sign in to the vibe!
+              </StyledText>
               {loading && (
                 <StyledText fontSize="1.6rem">Sigining you in</StyledText>
               )}
               <StyledForm onSubmit={handleLoginSubmit}>
                 <StyledInputContainer>
                   <StyledInputLabelContainer>
-                    <StyledLabel>Email address</StyledLabel>
                     <StyledInput
                       type="email"
                       placeholder="jane_doe@gma"
@@ -107,9 +108,9 @@ const Login = () => {
                       value={loginData.email}
                       onChange={handleLogin}
                     />
+                    <StyledLabel>Email address</StyledLabel>
                   </StyledInputLabelContainer>
                   <StyledInputLabelContainer>
-                    <StyledLabel>Password</StyledLabel>
                     <StyledInput
                       type="Password"
                       placeholder="Enter Password"
@@ -117,6 +118,7 @@ const Login = () => {
                       value={loginData.password}
                       onChange={handleLogin}
                     />
+                    <StyledLabel>Password</StyledLabel>
                   </StyledInputLabelContainer>
                 </StyledInputContainer>
 

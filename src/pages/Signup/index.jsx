@@ -107,7 +107,6 @@ const Sinup = () => {
                   <StyledInputContainer>
                     <StyledInputWrapper>
                       <StyledInputLabelContainer>
-                        <StyledLabel>First Name</StyledLabel>
                         <StyledInput
                           type="text"
                           placeholder="Enter First Name"
@@ -115,9 +114,9 @@ const Sinup = () => {
                           value={signupData.firstname}
                           onChange={handleChange}
                         />
+                        <StyledLabel>First Name</StyledLabel>
                       </StyledInputLabelContainer>
                       <StyledInputLabelContainer>
-                        <StyledLabel>Last Name</StyledLabel>
                         <StyledInput
                           type="text"
                           placeholder="Enter Last Name"
@@ -125,10 +124,10 @@ const Sinup = () => {
                           value={signupData.lastname}
                           onChange={handleChange}
                         />
+                        <StyledLabel>Last Name</StyledLabel>
                       </StyledInputLabelContainer>
                     </StyledInputWrapper>
                     <StyledInputLabelContainer>
-                      <StyledLabel>Email address</StyledLabel>
                       <StyledInput
                         type="email"
                         placeholder="Enter Email"
@@ -136,9 +135,9 @@ const Sinup = () => {
                         value={signupData.email}
                         onChange={handleChange}
                       />
+                      <StyledLabel>Email address</StyledLabel>
                     </StyledInputLabelContainer>
                     <StyledInputLabelContainer>
-                      <StyledLabel>Password</StyledLabel>
                       <StyledInput
                         type="Password"
                         placeholder="Enter Password"
@@ -146,9 +145,9 @@ const Sinup = () => {
                         value={signupData.password}
                         onChange={handleChange}
                       />
+                      <StyledLabel>Password</StyledLabel>
                     </StyledInputLabelContainer>
                     <StyledInputLabelContainer>
-                      <StyledLabel>Confirm Password</StyledLabel>
                       <StyledInput
                         type="Password"
                         placeholder="Confirm Password"
@@ -156,6 +155,7 @@ const Sinup = () => {
                         value={signupData.password_confirmation}
                         onChange={handleChange}
                       />
+                      <StyledLabel>Confirm Password</StyledLabel>
                     </StyledInputLabelContainer>
                   </StyledInputContainer>
                   <StyledButton

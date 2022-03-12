@@ -77,7 +77,7 @@ const Dashboard = () => {
 
           <StyledBigCard
             width="700px"
-            height="100vh"
+            // height="100vh"
             backgroundColor="#F2F3F7"
             boxShadow=" 0px 0px 10px rgba(0, 0, 0, 0.082937)"
             // padding="7.5rem 9.3rem 0 9.3rem"
