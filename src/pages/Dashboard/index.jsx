@@ -84,7 +84,7 @@ const Dashboard = () => {
             borderRaduis="0.6rem"
           >
             <StyledSmallCard
-              width="800px"
+              width="70rem"
               backgroundColor="#FFF"
               boxShadow="  0px 0px 10px rgba(0, 0, 0, 0.082937)"
               padding="1.5rem 1rem 3rem 1rem"
